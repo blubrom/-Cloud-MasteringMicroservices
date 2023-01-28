@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: blubrom/gateway
+      context: ../gateway
+      jib: {}
+    - image: blubrom/invoice
+      context: ../invoice
+      jib: {}
+    - image: blubrom/notification
+      context: ../notification
+      jib: {}
+    - image: blubrom/productorder
+      context: ../productorder
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}

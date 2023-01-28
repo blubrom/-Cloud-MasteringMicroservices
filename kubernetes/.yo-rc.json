@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["gateway", "invoice", "notification", "productorder"],
+    "clusteredDbApps": ["notification"],
+    "directoryPath": "../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "blubrom",
+    "ingressDomain": "",
+    "istio": false,
+    "jwtSecretKey": "YzJmOGIzZjJhMjlkNTQ0YmI4MTVhOGNjN2YwMzI0YTg1YjY4NTAxMTExM2Q3YjJiYzRhMzUyZDEzYTFjNmE4NTVkMWJlY2FhNGFmZDJlNWY3MmE3NjAyYTZiZDQ5OTA1ODU3OQ==",
+    "kubernetesNamespace": "store",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "monitoring": "prometheus",
+    "serviceDiscoveryType": "eureka"
+  }
+}
